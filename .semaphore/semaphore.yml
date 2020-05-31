@@ -31,7 +31,7 @@ blocks:
       prologue:
         commands:
           - chmod 0600 ~/.ssh/*
-          - ssh-add ~/.ssh/match-repository-private-key
+          - ssh-add ~/.ssh/*
           - checkout
           - cache restore
           - bundle install --path vendor/bundle
